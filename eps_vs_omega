@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+filename=`basename $1`
+output_dir=data/processed/
+
+find $1 -type f \
+    | grep -vE "err|seq" \
+    | xargs -I {} \
+        awk '
+        BEGIN { eps=0 }
+        { if ($4 > eps) eps=$4 }
+        END {
+            last = split(FILENAME, parts, "/");
+            omega = parts[last];
+
+            print omega, eps;
+        }
+        ' {} \
+    | tee $output_dir/eps_vs_omega_$filename

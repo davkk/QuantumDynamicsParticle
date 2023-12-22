@@ -1,4 +1,3 @@
-open type System.Math
 open FSharp.Data
 
 type Params =
@@ -10,11 +9,15 @@ let main argv =
 
     let steps = pars.Steps
     let N = pars.N
-    let n = pars.N2 |> float
+
+    let n =
+        if argv.Length = 2 then float argv[1] else pars.N2
+
     let dtau = pars.Dtau |> float
     let kappa = pars.Kappa |> float
 
-    let omega = argv[0] |> float
+    let omega =
+        if argv.Length = 1 then float argv[0] else pars.Omega
 
     let dx = 1.0 / float N
 
@@ -24,7 +27,7 @@ let main argv =
     |]
 
     let psi_R =
-        Array.map (fun x -> sqrt 2.0 * sin (n * PI * x)) xs
+        Array.map (fun x -> sqrt 2.0 * sin (n * System.Math.PI * x)) xs
 
     psi_R[0] <- 0.0
     psi_R[psi_R.Length - 1] <- 0.0
