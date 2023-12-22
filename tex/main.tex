@@ -69,12 +69,13 @@ Symulacja okazała się być stabilna tylko dla kroku $d\tau=0.0001$. Inne zbada
 \section{Badanie rezonansu}
 
 \begin{figure}[ht!]
-    \caption{\textbf{Szukanie rezonansu}}
+    \caption{\textbf{Skan wartości $\omega$ w poszukiwaniu rezonansu}}
     \vspace{0.2cm}
     \includegraphics[width=\linewidth]{../figures/resonance.pdf}
 \end{figure}
 
 Wartości $\omega$ dla których zachodzi rezonans znaleziono poprzez wykonanie skanu 30 punktów pomiarowych. Zbadano miejsca w których zaobserwowano pik.
+\pagebreak
 
 \begin{table}[h!]
 \vspace{1.5cm}
@@ -114,6 +115,7 @@ Wartości $\omega$ dla których zachodzi rezonans znaleziono poprzez wykonanie s
     \end{multicols}
     \caption{\textbf{Zachowanie gęstości w różnych krokach czasowych dla $n=1$, od lewej: $t=0.1,1.5,2.5$}}
 \end{figure}
+\pagebreak
 
 \begin{table}[h!]
 \vspace{1.5cm}
@@ -146,6 +148,7 @@ Wartości $\omega$ dla których zachodzi rezonans znaleziono poprzez wykonanie s
     \end{multicols}
     \caption{\textbf{Zachowanie gęstości w różnych krokach czasowych dla $n=4$, od lewej: $t=0.1,1.0,2.0$}}
 \end{figure}
+\pagebreak
 
 
 \begin{table}[h!]
@@ -179,9 +182,14 @@ Wartości $\omega$ dla których zachodzi rezonans znaleziono poprzez wykonanie s
     \end{multicols}
     \caption{\textbf{Zachowanie gęstości w różnych krokach czasowych dla $n=9$, od lewej: $t=0.1,2.5,5.0$}}
 \end{figure}
+\clearpage
 
 \section{Wnioski}
 
-W symulacji udało się zaobserować punkty rezonansu w układzie.
+W pierwszym etapie symulacji sprawdzono poprawność algorytmu. Wykonano obliczenia dla stanów cząstkowych o numerach 1, 4 i 9, monitorując normę, średnie położenie i średnią energię.
+
+W dalszych symulacjach wprowadzono zaburzające pole zewnętrzne. Przeprowadzono symulacje dla różnych wartości częstotliwości rezonansowej $\omega$. Czas symulacji ustawiono tak, aby obejmował co najmniej jeden pełny cykl okresowych zmian energii.
+
+Do wykonania symulacji zastosowano język F\#, a do wizualizacji Python/Matplotlib.
 
 \end{document}

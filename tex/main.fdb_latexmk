@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1703258366 "main.tex" "main.pdf" "main" 1703258368 0
+["pdflatex"] 1703284300 "main.tex" "main.pdf" "main" 1703284302 0
   "../figures/fluctuations.pdf" 1703066976 49684 477442cd87761a591dd04e2ed5631fcd ""
   "../figures/frame_n=1_time=0.1.png" 1703254470 28651 0d128664b99b8513f2d0a64d87f154b6 ""
   "../figures/frame_n=1_time=1.5.png" 1703254347 31994 e262658196b4761720e7ae1b1c7d45ce ""
@@ -163,9 +163,9 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1689984000 40900 887e0dc8cac988a9e9c574af364cf837 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1701881658 285586 ec9cdfd6e7f7af3804154eeb486facb0 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1702328743 6490779 028fbcbf1105751d97d3b15600be5fbf ""
-  "main.aux" 1703258368 2806 cd767eee7dd6827b64334d0c9322176b "pdflatex"
-  "main.out" 1703258368 325 e7ec5e27033e995d23c8389a9b5bf72d "pdflatex"
-  "main.tex" 1703258364 5405 c69b35d0e4d1bd77f8e6fece01fc900f ""
+  "main.aux" 1703284302 2837 f6796cdeca19497d78b56c042c8ebcf2 "pdflatex"
+  "main.out" 1703284302 325 e7ec5e27033e995d23c8389a9b5bf72d "pdflatex"
+  "main.tex" 1703284299 5948 1aa9a92424575b1508481ee4fba3e9b2 ""
   (generated)
   "main.aux"
   "main.log"
